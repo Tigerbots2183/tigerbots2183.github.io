@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Frc-2183</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="navSpacer">
+
+    </div>
+    <nav>
+        <img class="sidebar-img" src="../media/IMG_0399-removebg.png">
+        <h1 id="toptitle">TigerBots FRC-2183</h1>
+        <ul id="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a" href="../">About Us</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="../bots">Robots</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a">Sponsors</a>
+
+            </li>
+        </ul>
+        <img draggable="false" class="hamburger" src="../media/hambuger.png" onclick=" setTimeout(() => {
+            document.querySelector('.sidebar').classList.toggle('sideOpen')
+        }, 50);  ">
+    </nav>
+    <div class="sidebar">
+
+        <div class="listOption" id="dashSidebarButton">
+            <a class="sidebarH1" href="../" style="color: black;"><i>About Us</i></a>
+        </div>
+
+        <div class="listOption" id="dataSidebarButton">
+            <a class="sidebarH1" href="../bots" style="color: black;"><i>Robots</i></a>
+        </div>
+
+        <div class="listOption" id="eventSidebarButton">
+            <h1 class="sidebarH1"><i>Sponsors</i></h1>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="all-contents-flexcol" onclick=" document.querySelector('.sidebar').classList.remove('sideOpen') ">
+        <img class="thanksPicture" src="../media/pplworkingonbotinpitwithtext.jpg">
+        <div class="tierlistFull">
+            <div class="tier2" id="diamond" style="mask-image: none; background-color: #b9f2ff;">
+                <h1 class="tierTitle">Diamond</h1>
+                <div class="DiamondLogoHolder" >
+                    <img class="sponsorLogos DiamondSponsorLogos" style="margin:5%;" src="../media/logos/entergy-logo-brandlogo.net_-768x768.png">
+                    <img class="sponsorLogos DiamondSponsorLogos" src="../media/logos/cheveron.png">
+                </div>
+            </div>
+            <div class="tier2" id="Ruby" style="mask-image: none; background-color: #E5E4E2;">
+                <h1 class="tierTitle">Platinum</h1>
+                <div class="logoHolder">
+                    <img class="sponsorLogos" src="../media/logos/dow.png">
+                    <img class="sponsorLogos" src="../media/logos/dominos.png">
+
+                </div>
+            </div>
+            <!-- <div class="tier2" id="gold" style="mask-image: none; background-color: #f5e5a1">
+                <h1 class="tierTitle">Gold</h1>
+            </div>
+            <div class="tier2" id="silver" style="mask-image: none; background-color: #d9d9d9">
+                <h1 class="tierTitle">Silver</h1>
+            </div> -->
+            <div class="tier2" id="bronze" style="mask-image: none; background-color: #e1b284">
+                <h1 class="tierTitle">Bronze</h1>
+                <div class="logoHolder">
+                    <img class="sponsorLogos" src="../media/logos/Cembell logo.png" style="margin:5%; flex:1">
+                    <img class="sponsorLogos" src="../media/logos/IMG_4144.PNG" style="margin:5%; flex:1">
+                    <img class="sponsorLogos" src="../media/logos/ARKEMA_logo.png" style="margin:5%;flex:1">
+
+
+                </div>
+            </div>
+            <div class="tier2" style="mask-image: none">
+                <h1 class="tierTitle">Special Thanks To:</h1>
+                <div class="logoHolder">
+                    <img class="sponsorLogos" src="../media/logos/hahn.png">
+                    <img class="sponsorLogos" src="../media/logos/scpps.jpg">
+                    
+
+                </div>
+            </div>
+            
+        </div>
+        <div class="grayBox tier2">
+            <h1 class="tierTitle">We would love your help!</h1>
+            <h2 class="sidebarText" id="frcText">
+                Please reach out to us for further details about sponsorship, each tier and its perks are listed below
+            </h2>
+
+            <h2 class="sidebarText" id="frcText">
+                Email: <u> rfitzgerald@wearesccps.org </u>
+            </h2>
+
+        </div>
+        <div class="tierlistFull">
+            <div class="tier" id="diamond">
+                <h1 class="tierTitle">10,000$ - Diamond</h1>
+                <h3>Large Logo in Pit and Promotional media, Large Logo on T-shirt, Large logo on robot</h3>
+            </div>
+            <div class="tier" id="Ruby">
+                <h1 class="tierTitle">5,000$ - Platinum</h1>
+                <h3>Medium Logo in Pit and Promotional media, Medium Logo on T-shirt, Medium logo on robot</h3>
+            </div>
+            <div class="tier" id="gold">
+                <h1 class="tierTitle">2,500$ - Gold</h1>
+                <h3>Medium Logo in Pit and Promotional media, Medium Logo on T-shirt, Small logo on robot</h3>
+            </div>
+            <div class="tier" id="silver">
+                <h1 class="tierTitle">1,000$ - Silver</h1>
+                <h3>Medium Logo in Pit and Promotional media, Small Logo on T-shirt</h3>
+            </div>
+            <div class="tier" id="bronze">
+                <h1 class="tierTitle">500$ - Bronze</h1>
+                <h3>Medium Logo in Pit and Promotional media</h3>
+            </div>
+        </div>
+    </div>
+    <script>
+        let portrait = (window.innerWidth / window.innerHeight) < 1;
+        if (portrait) {
+            document.querySelector("#nav-ul").remove()
+            document.querySelector(".hamburger").style.display = "block"
+        } else {
+            document.querySelector(".hamburger").remove()
+            document.querySelector("#nav-ul").style.display = "flex"
+
+        }
+
+
+    </script>
+</body>
+
+</html>

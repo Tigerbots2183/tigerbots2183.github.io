@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Frc Team 2183</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navSpacer">
+
+    </div>
+    <nav>
+        <img class="sidebar-img" src="media/download.png">
+        <h1 id="toptitle">TigerBots FRC-2183</h1>
+      
+        <ul id="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a">About Us</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="./bots/">Robots</a>
+
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="./sponsors/">Sponsors</a>
+
+            </li>
+        </ul>
+        
+        <img draggable="false" class="hamburger" src="./media/hambuger.png" onclick=" setTimeout(() => {
+            document.querySelector('.sidebar').classList.toggle('sideOpen')
+        }, 50);  ">
+
+    </nav>
+
+    <div class="sidebar">
+
+        <div class="listOption" id="dashSidebarButton">
+            <h1 class="sidebarH1"><i>About Us</i></h1>
+        </div>
+
+        <div class="listOption" id="dataSidebarButton">
+            <a class="sidebarH1"  href="./bots/" style="color: black;"><i>Robots</i></a>
+        </div>
+
+        <div class="listOption" id="eventSidebarButton">
+            <a class="sidebarH1" href="./sponsors/" style="color: black;"><i>Sponsors</i></a>
+        </div>
+
+      
+
+
+
+    </div>
+
+
+    <div id="all-contents-flex" onclick=" document.querySelector('.sidebar').classList.remove('sideOpen') ">
+        <img class="mainImage" src="media/ETF_2977.jpg">
+        <div class="firstTextBlock">
+            <h1 class="sidebarHead">Who are the TigerBots?</h1>
+            <h3 class="sidebarText">This amazing team of Hahnville High School
+                Students continue to build robots from scratch to solve new challenges
+                each season, competing against over 3000 teams from around the
+                globe.</h3>
+        </div>
+        <div class="secondTextBlock">
+            <h1 class="sidebarHead">What are the robots like?</h1>
+            <h3 class="sidebarText">These robots are<b> not </b>little toy robot kits, they are 130 pound machines
+                using industrial parts, designed and fabricated by the students. Each season they are only given 2-3
+                months until their first competition. They must prototype, design and build from zero in the given time.
+                <h3>
+        </div>
+        <img class="mainImage" src="media/PurpleReignBotPicture.jpg">
+        <img src="media/blueBanners.png" id="bannerImage">
+        <h2 class="centreText">The Tigerbots built a fantastic new robot, and were very competitive
+            last season. We preformed well at Magnolia Reigonal Competition making <b>3rd alliance</b> in
+            playoffs
+            out of more 30 teams. We made great improvements to the team’s knowledge
+            and skills.</h2>
+        <div class="grayBox">
+            <img id="frcLogo" src="media/FIRSTRobotics_iconHorz_RGB.png">
+            <h2 class="sidebarText" id="frcText">
+                Founded in 2007, the Tigerbots are part of a larger organization called FIRST Robotics (For Inspiration
+                and Recognition of Science and Technology).
+                <br>
+                <br>
+                The mission of FIRST is to inspire young people to be leaders in science and
+                technology by engaging them in mentor-based programs that build science,
+                engineering, and technology skills, while also building self-esteem, life skills,
+                and community awareness.
+            </h2>
+        </div>
+
+        <div class="firstTextBlock">
+            <h1 class="sidebarHead">Through the program, students are able to:</h1>
+            <ul class="sidebarText">
+                <li>Apply engineering principles to the design, build, and operate robots for competitions</li>
+                <li>Learn and use CAD and other engineering software</li>
+                <li>Gain hands-on experience with multi-disciplinary collaborative problem solving</li>
+                <li>Program robots for both autonomous and human operated modes</li>
+                <li>Volunteer in their community</li>
+                <li>Network with industry and engineering firms and companies</li>
+            </ul>
+        </div>
+        <img class="mainImage" src="media/20250323_083536.jpg">
+        <img class="mainImage" src="media/ETF_5485.jpg">
+        <div class="secondTextBlock">
+            <h1 class="sidebarHead">Team Impact:</h1>
+            <ul class="sidebarText">
+                <li>Alumni pursuing degrees in STEM fields</li>
+                <li>Alumni working in STEM fieldsets</li>
+                <li>Inspiring and encouraging youth to pursue interest in STEM careers by demonstrations at community
+                    events, and hosting youth STEM camps</li>
+                <li>Providing local businesses with a smart, problem solving, skilled and competitive workforce</li>
+            </ul>
+        </div>
+        <div id="sponserSidebar">
+            <h1 class="sidebarHead">Sponsorship</h1>
+            <h2 class="sidebarText">To afford this learning opportunity for students, we need Sponsorships. Sponsors are
+                given various rewards for their support, which are listed to the side<h2>
+                    <h1 class="sidebarHead">We are a qualified 501 (C)(3) organization, 72-6001209, please remember to
+                        claim your tax deduction!</h1>
+
+        </div>
+        <div class="tierlist">
+            <div class="tier" id="diamond">
+                <h1 class="tierTitle">$10,000+ - Diamond</h1>
+                <h3>Large Logo in Pit and Promotional media, Large Logo on T-shirt, Large logo on robot</h3>
+            </div>
+            <div class="tier" id="Ruby">
+                <h1 class="tierTitle">$5,000+ - Platinum</h1>
+                <h3>Medium Logo in Pit and Promotional media, Medium Logo on T-shirt, Medium logo on robot</h3>
+            </div>
+            <div class="tier" id="gold">
+                <h1 class="tierTitle">$2,500+ - Gold</h1>
+                <h3>Medium Logo in Pit and Promotional media, Medium Logo on T-shirt, Small logo on robot</h3>
+            </div>
+            <div class="tier" id="silver">
+                <h1 class="tierTitle">$1,000+ - Silver</h1>
+                <h3>Medium Logo in Pit and Promotional media, Small Logo on T-shirt</h3>
+            </div>
+            <div class="tier" id="bronze">
+                <h1 class="tierTitle">$500+ - Bronze</h1>
+                <h3>Medium Logo in Pit and Promotional media</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+    </div>
+    <script>
+        let portrait = (window.innerWidth / window.innerHeight) < 1;
+        if(portrait){
+            document.querySelector("#nav-ul").remove()
+            document.querySelector(".hamburger").style.display = "block"
+        }else{
+            document.querySelector(".hamburger").remove()
+            document.querySelector("#nav-ul").style.display = "flex"
+
+        }
+
+        
+    </script>
+</body>
+
+</html>

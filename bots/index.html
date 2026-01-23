@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Frc-2183</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+
+<body>
+    <div id="navSpacer">
+
+    </div>
+    <nav>
+        <img class="sidebar-img" src="../media/IMG_0399-removebg.png">
+        <h1 id="toptitle">TigerBots FRC-2183</h1>
+        <ul id="nav-ul">
+            <li class="nav-li">
+                <a class="nav-a" href="../">About Us</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a">Robots</a>
+            </li>
+            <li class="nav-li">
+                <a class="nav-a" href="../sponsors">Sponsors</a>
+
+            </li>
+        </ul>
+        <img draggable="false" class="hamburger" src="../media/hambuger.png" onclick=" setTimeout(() => {
+            document.querySelector('.sidebar').classList.toggle('sideOpen')
+        }, 50);  ">
+    </nav>
+    <div class="sidebar">
+
+        <div class="listOption" id="dashSidebarButton">
+            <a class="sidebarH1" href="../" style="color: black;"><i>About Us</i></a>
+        </div>
+
+        <div class="listOption" id="dataSidebarButton">
+            <h1 class="sidebarH1" style="color: black;"><i>Robots</i></h1>
+        </div>
+
+        <div class="listOption" id="eventSidebarButton">
+            <a class="sidebarH1" href="../sponsors/" style="color: black;"><i>Sponsors</i></a>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="all-contents" onclick=" document.querySelector('.sidebar').classList.remove('sideOpen') ">
+        <!--<div class="tagCompleted"><p>Completed</p></div>
+            <div class="tagCanceled"><p>Canceled</p></div>
+            <div class="tagActDev"><p>In active Development</p></div>
+
+            <div class="tagUpt"><p>Recently-Updated</p></div>
+            <div class="tagUnFin"><p>Unfinished</p></div> -->
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/PRincomp.jpg">
+            <div class="tagTitle">
+                <!-- <h1 class="projectTitle solisText">purple reign</h1> -->
+                <img class="botLogos" src="../media/botLogos/PurpleReignWhitebg.jpg">
+
+            </div>
+            <div class="projectNotes">
+                <p>Purple Reign was our capable on-season bot for REEFSCAPE. It was capable of shooting levels 2-4 with
+                    auto alignment. It was one of few bots with a centralized middle 'donut' climb, using two arms in
+                    the middle to push on the bottom of the cage.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/Solis.jpg">
+            <div class="tagTitle">
+                <!-- <h1 class="projectTitle solisText">Solis</h1> -->
+                <img class="botLogos" src="../media/botLogos/SolisLogo.png">
+
+
+                <div class="tagFutDev mobileMargin">
+                    <p>Finalist</p>
+
+                </div>
+                <div class="tagFutDev mobileMargin">
+                    <p>Semi-Finalist</p>
+
+                </div>
+                
+                <div class="tagFutDev mobileMargin">
+                    <p>Innovation In Control</p>
+
+                </div>
+
+                <div class="tagOSAW mobileMargin">
+                    <p>Semi-Finalist (Off-season)</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>Solis is our on-season robot for CRESCENDO, the 2024 robotics competition. This robot has a fold out
+                    intake that feeds into a ajustable note-shooter. There is a defelctor panel to aid in scoreing amp
+                    shots and two climbing arms. This robot preformed well at Magnolia and preformed wonderfully at
+                    Bayou Reigonal Championship, getting fourth place in qualifications and finalist in playoffs.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        
+        <div class="projectDiv">
+            <img src="../media/botPictures/tbot2.jpg">
+
+            <div class="tagTitle">
+                <h1 class="projectTitle">T-Bot-2</h1>
+
+
+                <div class="tagCanceled mobileMargin">
+
+                    <p>Non-Competition Robot</p>
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>T-bot-2 is a tshirt cannon designed by the tigerbots team. This robot launches T-shirts into the
+                    stands
+                    at Hanville-High-School during football games. It has a tank drive base and has four chambers for
+                    T-shirts. Unlike its predecessor, this robot has a turret on the cannons allowing for better aiming.
+                    The cannons are much more powerful than t-bot-1's</p>
+            </div>
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/Josephine.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle joseText">Josephine I</h1>
+                <div class="tagCompleted mobileMargin">
+                    <p>Off-season Robot</p>
+                </div>
+
+            </div>
+            <div class="projectNotes">
+                <p>Josephine I is our off season robot for CRESCENDO. It has a dual under-bumper intake and a dual
+                    directional shooter. It can make speaker shots from very far away and make amp as well. This robot
+                    made 11th in qualifications at North-Shore-Knockout.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/JRit2023.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle jrText">Jack the Reacher</h1>
+
+                <div class="tagFutDev mobileMargin">
+                    <p>Creativity</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>Jack the Reacher was our robot for CHARGED UP. It was able to place cubes or cones into "Power
+                    grids", or layered platforms. It was able to automatically balance on the platform at the end of the
+                    game as well.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/cyborus3.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle solisText">Cyborus</h1>
+                <div class="tagCompleted mobileMargin">
+                    <p>Off-season Robot</p>
+                </div>
+
+            </div>
+            <div class="projectNotes">
+                <p>Cybourus was our off-season robot for CHARGED UP. It was able to place cubes or cones into "Power
+                    grids", or layered platforms. It was able to automatically balance on the platform at the end of the
+                    game as well. It also featured a Swerve-Drive.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/CargauxFinal.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle carText">Cargeaux</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Quarter-Finalist</p>
+
+                </div>
+                <div class="tagOSAW mobileMargin">
+                    <p>Quarter-Finalist (Off-Season)</p>
+
+                </div>
+
+            </div>
+            <div class="projectNotes">
+                <p>Cargeaux was our robot for RAPID REACT. It was able to shoot balls or 'Cargo' into the goals, and had
+                    a ground intake for them. It had a turret shooter to shoot from any angle, and climb onto the second
+                    climb rung. </p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/crabtrapRRCropped.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle crabText">Crabtrap</h1>
+                <div class="tagCompleted mobileMargin">
+                    <p>Off-season Robot</p>
+                </div>
+
+
+            </div>
+            <div class="projectNotes">
+                <p>Crabtrap was our off-season robot for RAPID REACT. It was able to shoot balls or 'Cargo' into the
+                    goals, and had
+                    a 4 directional intake for them. It was our first robot with the omni-directional movement system
+                    known as 'Swerve-Drive' </p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/endor1.jpeg">
+            <div class="tagTitle">
+                <h1 class="projectTitle solisText">Endor</h1>
+
+                <div class="tagFutDev mobileMargin">
+                    <p>Creativity</p>
+
+                </div>
+                <div class="tagFutDev mobileMargin">
+                    <p>Quarter-Finalist</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>Endor was our robot for INFINITE RECHARGE. It was able to shoot balls or 'Power Cells' into the goals
+                    swiftly, it was able to rotate the control pannel, and climb onto the generator switch. </p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/DO2021(osb)Cropped.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle solisText">D.o.</h1>
+                <div class="tagCompleted mobileMargin">
+                    <p>Off-season Robot</p>
+                </div>
+
+            </div>
+            <div class="projectNotes">
+                <p>D.o. was our off-season robot for INFINITE RECHARGE. It was able to shoot balls or 'Power Cells' into the goals
+                    with a turret shooter, and was able to climb at the end of the match.
+
+                </p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/geminiBetter.JPG">
+            <div class="tagTitle">
+                <h1 class="projectTitle gemText">Gemini</h1>
+
+                <div class="tagFutDev mobileMargin">
+                    <p>World Competitor</p>
+                </div>
+                <div class="tagFutDev mobileMargin">
+                    <p>Semi-Finalist</p>
+
+                </div>
+                <div class="tagOSAW mobileMargin">
+                    <p>Semi-Finalist (Off-Season)</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>Gemini was our robot for DESTINATION:DEEP SPACE. It was able to place panels on both the cargo ship and space ship. It was also able to place cargo into the cargo ship. It was able to climb onto the central pedistal in end-game </p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/orionv2PU.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle solisText">Orion</h1>
+
+                <div class="tagCompleted mobileMargin">
+                    <p>Off-season Robot</p>
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>Orion was our off-season robot for DESTINATION:DEEP SPACE. It was able to do both panels and cargo on level one and two of the cargo ship. It was our first off-season robot.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/tbot.jpg">
+
+            <div class="tagTitle">
+                <h1 class="projectTitle">T-Bot</h1>
+
+
+                <div class="tagCanceled mobileMargin">
+
+                    <p>Non-Competition Robot</p>
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>T-bot is a tshirt cannon designed by the tigerbots team. This robot launches T-shirts into the stands
+                    at Hanville-High-School during football games. It has a tank drive base and has four chambers for
+                    T-shirts</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/p3aiextended.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle p3Text">P^3</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Quarter-Finalist</p>
+
+                </div>
+                <div class="tagOSAW mobileMargin">
+                    <p>Semi-Finalist (Off-Season)</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>P^3 was our robot for POWER UP. It was able to place power cubes on the high scale and the low scale, and was able to climb at the end with a 'buddy bar' to bring another robot up with it.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/wattson2hq.jpeg">
+            <div class="tagTitle">
+                <h1 class="projectTitle wattText">Wattson</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Semi-Finalist</p>
+
+                </div>
+                <div class="tagOSAW mobileMargin"><p>Winners (Off-season)</p></div>
+            </div>
+            <div class="projectNotes">
+                <p>Wattson was our robot for STEAMWORKS. It was able to collect and shoot wiffle balls.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/stronghold2.jpeg">
+            <div class="tagTitle">
+                <h1 class="projectTitle strongText">Sir Er D'Bree</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Semi-Finalist</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>Sir Er D'Bree was our robot for STRONGHOLD. This robot shoots balls or
+                    'bouldors' and was
+                    able to traverse over obsticles in the field with a treaded drive base.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/ToteMater2.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle strongText">Tote Mater</h1>
+
+            </div>
+            <div class="projectNotes">
+                <p>Tote mater was our robot for RECYCLE RUSH. It was able to stack totes vertically.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/TheQue.png">
+            <div class="tagTitle">
+                <h1 class="projectTitle strongText">The Que</h1>
+
+            </div>
+            <div class="projectNotes">
+                <p>The que was our robot for AERIAL ASSIST. It was able to score 2 foot wide exercise balls into the low goal.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/Ultimate ascent.jpg">
+            <div class="tagTitle">
+                <!-- <h1 class="projectTitle strongText">The Que</h1> -->
+                <h1 class="projectTitle">2013</h1>
+
+            </div>
+            <div class="projectNotes">
+                <p>This was our robot for ULTIMATE ASCENT</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/2012.png">
+            <div class="tagTitle">
+                <!-- <h1 class="projectTitle strongText">The Que</h1> -->
+                <h1 class="projectTitle">2012</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Quarter-Finalist</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>This was our robot for REBOUND RUMBLE</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/LogoMotion.png">
+            <div class="tagTitle">
+                <!-- <h1 class="projectTitle strongText">The Que</h1> -->
+                <h1 class="projectTitle">2011</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Quarter-Finalist</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>This was our robot for LOGO MOTION. It was able to score shapes on the low pegs.</p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+<!-- 
+        <div class="projectDiv">
+            <img src="../media/botPictures/">
+            <div class="tagTitle">
+                 <h1 class="projectTitle strongText"></h1>
+
+            </div>
+            <div class="projectNotes">
+                <p>This was our robot for BREAKAWAY.</p>
+            </div>
+        </div> -->
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/lunacy.png">
+            <div class="tagTitle">
+                <!-- <h1 class="projectTitle strongText">The Que</h1> -->
+                <h1 class="projectTitle">2009</h1>
+
+            </div>
+            <div class="projectNotes">
+                <p>This was our robot for LUNACY.</p>
+            </div>` 
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+        <!-- 
+        <div class="projectDiv">
+            <img src="../media/botPictures/">
+            <div class="tagTitle">
+                 <h1 class="projectTitle strongText"></h1>
+
+            </div>
+            <div class="projectNotes">
+                <p>This was our robot for OVERDRIVE.</p>
+            </div>
+        </div> -->
+
+        <div class="projectDiv">
+            <img src="../media/botPictures/2007 robot.jpg">
+            <div class="tagTitle">
+                <h1 class="projectTitle">2007</h1>
+                <div class="tagFutDev mobileMargin">
+                    <p>Finalist</p>
+
+                </div>
+            </div>
+            <div class="projectNotes">
+                <p>This was our first robot made by the team, which competed at the Bayou regional for RACK N' ROLL. </p>
+            </div>
+            <!-- <a class="proLink" href="">Read More</a> -->
+        </div>
+
+    
+
+
+     
+        <div class="blank">
+
+        </div>
+
+        <script src="bots.js"></script>
+    </div>
+</body>
+
+</html>
