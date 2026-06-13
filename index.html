@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
     <nav>
         <img class="sidebar-img" src="media/download.png">
         <h1 id="toptitle">TigerBots FRC-2183</h1>
-      
+
         <ul id="nav-ul">
             <li class="nav-li">
                 <a class="nav-a">About Us</a>
@@ -33,7 +33,7 @@
 
             </li>
         </ul>
-        
+
         <img draggable="false" class="hamburger" src="./media/hambuger.png" onclick=" setTimeout(() => {
             document.querySelector('.sidebar').classList.toggle('sideOpen')
         }, 50);  ">
@@ -47,14 +47,14 @@
         </div>
 
         <div class="listOption" id="dataSidebarButton">
-            <a class="sidebarH1"  href="./bots/" style="color: black;"><i>Robots</i></a>
+            <a class="sidebarH1" href="./bots/" style="color: black;"><i>Robots</i></a>
         </div>
 
         <div class="listOption" id="eventSidebarButton">
             <a class="sidebarH1" href="./sponsors/" style="color: black;"><i>Sponsors</i></a>
         </div>
 
-      
+
 
 
 
@@ -62,7 +62,13 @@
 
 
     <div id="all-contents-flex" onclick=" document.querySelector('.sidebar').classList.remove('sideOpen') ">
-        <img class="mainImage" src="media/ETF_2977.jpg">
+        <div class="bannerHolder">
+            <img src="/media/SideLogo.png" class="bannerImage">
+        </div>
+        <section id="events-section" class="events-section">
+            <!-- Dynamically populated by events.js -->
+        </section>
+        <img class="mainImage" src="media/TEAMPIC.JPG">
         <div class="firstTextBlock">
             <h1 class="sidebarHead">Who are the TigerBots?</h1>
             <h3 class="sidebarText">This amazing team of Hahnville High School
@@ -70,6 +76,7 @@
                 each season, competing against over 3000 teams from around the
                 globe.</h3>
         </div>
+
         <div class="secondTextBlock">
             <h1 class="sidebarHead">What are the robots like?</h1>
             <h3 class="sidebarText">These robots are<b> not </b>little toy robot kits, they are 150 pound machines
@@ -77,7 +84,7 @@
                 months until their first competition. They must prototype, design and build from zero in the given time.
                 <h3>
         </div>
-        <img class="mainImage" src="media/PurpleReignBotPicture.jpg">
+        <img class="mainImage" src="media/botPictures/ARC.JPG">
         <img src="media/blueBanners.png" id="bannerImage">
         <h2 class="centreText">The Tigerbots built a fantastic new robot, and were very competitive
             last season. We preformed well at Magnolia Reigonal Competition making <b>4th alliance</b> in
@@ -129,7 +136,8 @@
         </div>
         <div id="sponserSidebar">
             <h1 class="sidebarHead">Sponsorship</h1>
-            <h2 class="sidebarText">To afford this learning opportunity for students and outreach to share stem across the state, we need Sponsorships. Sponsors are
+            <h2 class="sidebarText">To afford this learning opportunity for students and outreach to share stem across
+                the state, we need Sponsorships. Sponsors are
                 given various rewards for their support, which are listed to the side<h2>
                     <h1 class="sidebarHead">We are a qualified 501 (C)(3) organization, 72-6001209, please remember to
                         claim your tax deduction!</h1>
@@ -168,17 +176,18 @@
     </div>
     <script>
         let portrait = (window.innerWidth / window.innerHeight) < 1;
-        if(portrait){
+        if (portrait) {
             document.querySelector("#nav-ul").remove()
             document.querySelector(".hamburger").style.display = "block"
-        }else{
+        } else {
             document.querySelector(".hamburger").remove()
             document.querySelector("#nav-ul").style.display = "flex"
 
         }
 
-        
+
     </script>
+    <script src="./events.js"></script>
 </body>
 
 </html>
